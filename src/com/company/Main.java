@@ -59,11 +59,21 @@ public class Main {
         System.out.println();
         for (int i = 0; i < myArray1.length; i++) {
             if (myArray1[i] % 2 == 0) {
-                System.out.print(myArray1[i] + " ");
-            } else {
-                System.out.print(myArray1[i] + 1 + " ");
+                if (i == myArray1.length - 1) {
+                    System.out.print(myArray1[i] + " ");
+                } else {
+                    System.out.print(myArray1[i] + ", ");
+                }} else {
+                    if (i==myArray1.length-1) {
+                        myArray1[i] += 1;
+                        System.out.print(myArray1[i] + " ");
+                    } else {
+                        myArray1[i] += 1;
+                        System.out.print(myArray1[i] + ", ");
+                    }
+                }
             }
         }
     }
-}
+
 
